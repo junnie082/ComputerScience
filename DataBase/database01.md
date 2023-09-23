@@ -2,6 +2,14 @@
 
 #### 2023.09.23.(토)
 
+## [mySql 설치 및 시작, 종료, 재시작](https://2day-is-seonday.tistory.com/entry/Mac맥-Homebrew-MySql-설치-및-서버-시작-종료-재시작하기)
+
+- `brew install mysql`: mysql 서버 설치
+- `mysql.server start`: mysql 서버 시작
+- `mysql.server restart`: mysql 서버 재시작
+- `mysql.server stop`: mysql 서버 종료
+
+
 ## [mySql 설치](https://velog.io/@ryong9rrr/mySQL-기본-사용법-정리예제)
 
 - `mysql -uroot -p`: 나의 mysql 계정으로 접속한다.
