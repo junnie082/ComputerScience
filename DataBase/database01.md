@@ -1,5 +1,7 @@
 # Database01
 
+## 데이터베이스 세팅 및 기본 문법
+
 #### 2023.09.23.(토)
 
 ## [mySql 설치](https://velog.io/@ryong9rrr/mySQL-기본-사용법-정리예제)
