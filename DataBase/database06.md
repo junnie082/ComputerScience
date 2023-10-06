@@ -15,7 +15,7 @@
 
 ### [UNION vs UNION ALL](https://whitepro.tistory.com/580)
 
-### [Intersect](https://lannstark.tistory.com/46)
+### [INTERSECT](https://lannstark.tistory.com/46)
 
 ## 마치며
 
