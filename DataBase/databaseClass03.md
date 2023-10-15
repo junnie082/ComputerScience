@@ -35,7 +35,7 @@
 
 - 관계형 데이터 모델의 3요소
 
-![database1](/assets/images/2023-10-14/database1.png)
+![database1](/assets/images/2023-10-14-2/database1.png)
 
 - 데이터를 저장하는 기본 데이터 구조는 릴레이션
 - 릴레이션의 데이터를 처리하는 연산은 관계 대수를 사용
@@ -117,7 +117,7 @@
 
 - 릴레이션의 구성
 
-![database2](/assets/images/2023-10-14/database2.png)
+![database2](/assets/images/2023-10-14-2/database2.png)
 
 ### 릴레이션 스키마
 
@@ -160,7 +160,7 @@
 - 데이터베이스 인스턴스(database instance)
   - 특정 시점에서의 모든 릴레이션 인스턴스들의 모임으로 동적임
 - 관계형 데이터베이스의 구성
-  ![database3](/assets/images/2023-10-14/database3.png)
+  ![database3](/assets/images/2023-10-14-2/database3.png)
 
 ### 2.3 릴레이션의 특성
 
@@ -256,9 +256,9 @@
 - 결과적으로 모든 릴레이션은 최소 하나 이상의 후보키를 가짐
 
 - '학원생' 릴레이션의 예
-  ![database4](/assets/images/2023-10-14/database4.png)
+  ![database4](/assets/images/2023-10-14-2/database4.png)
 
-![database5](/assets/images/2023-10-14/database5.png)
+![database5](/assets/images/2023-10-14-2/database5.png)
 
 ### 슈퍼키
 
@@ -269,7 +269,7 @@
   - 릴레이션 안에는 여러 후보키가 있을 수 있고 모든 후보키는 슈퍼키임
   - 후보키를 포함하는 속성 집합도 모두 슈퍼키가 됨
 
-![database6](/assets/images/2023-10-14/database6.png)
+![database6](/assets/images/2023-10-14-2/database6.png)
 
 ### 기본키
 
@@ -278,7 +278,7 @@
     - 여러 후보키 중에서 하나를 기본키로 선택하여 지정
     - 의미적으로 튜플을 가장 대표할 수 있고 또한 식별 수단으로도 적합한 후보키를 기본키로 선정
 
-![database7](/assets/images/2023-10-14/database7.png)
+![database7](/assets/images/2023-10-14-2/database7.png)
 
 - 기본키 선정 기준
   - 후보키가 하나일 경우, 바로 기본키가 됨
@@ -295,11 +295,11 @@
     - 둘 이상의 후보키 중에서 하나를 기본키로 지정하면 기본키로 지정되지 않은 나머지 후보키들은 대체키가 됨
     - 릴레이션 안에서 기본키는 하나이지만 대체키는 여러 개 존재할 수 있음
 
-![database8](/assets/images/2023-10-14/database8.png)
+![database8](/assets/images/2023-10-14-2/database8.png)
 
 ## 릴레이션 키의 포함 관계
 
-![database9](/assets/images/2023-10-14/database9.png)
+![database9](/assets/images/2023-10-14-2/database9.png)
 
 ## 외래키
 
@@ -311,7 +311,7 @@
     - 의미적 연관성이 있음에도 다른 릴레이션으로 분리된 튜플 사이의 연결 고리 역할
   - 기본키와 외래키는 관계형 데이터 모델의 핵심 개념
 
-![database10](/assets/images/2023-10-14/database10.png)
+![database10](/assets/images/2023-10-14-2/database10.png)
 
 ### 무결성 제약 조건
 
@@ -345,7 +345,7 @@
   - DBMS에게 외래키를 선언함으로써 즉시 적용됨
   - 의미적으로 연관된 두 릴레이션 튜플 사이의 일관성 유지를 위해 사용함
 
-![database11](/assets/images/2023-10-14/database11.png)
+![database11](/assets/images/2023-10-14-2/database11.png)
 
 - 개체 무결성 제약 조건
   - 기본키는 개체 식별자(entity identifier)의 역할
@@ -368,7 +368,7 @@
 
 ### 제약 조건과 적용 SQL 명령어 키워드
 
-![database12](/assets/images/2023-10-14/database12.png)
+![database12](/assets/images/2023-10-14-2/database12.png)
 
 ### 4. 관계 연산
 
@@ -393,7 +393,7 @@
   - 관계 대수나 관계 해석은 형식 언어로서 둘 다 상용 DBMS가 직접 지원하지는 않으므로 실제 사용할 수 있는 데이터 언어는 아님
   - SQL 언어의 작성 방법이나 내부 처리 방식의 이론적 기반을 제공
 
-![database13](/assets/images/2023-10-14/database13.png)
+![database13](/assets/images/2023-10-14-2/database13.png)
 
 ## 관계형 데이터 모델
 
@@ -413,7 +413,7 @@ Relationship -> Relation
   - Table 구조를 의미
   - 속성(4개), 기본키(학번)
 
-![database14](/assets/images/2023-10-14/database14.png)
+![database14](/assets/images/2023-10-14-2/database14.png)
 
 - Relation Instance
   - 하나의 행
@@ -461,7 +461,7 @@ Relationship -> Relation
 - 함수에서 기인
 - 개념적 설계(ER schema) 단계를 관계 스키마 형태로 매핑 시키는 룰이 존재
 
-![database15](/assets/images/2023-10-14/database15.png)
+![database15](/assets/images/2023-10-14-2/database15.png)
 
 - 1:1 관계
 
@@ -469,18 +469,18 @@ Relationship -> Relation
   - 교수(교수번호, 이름, 학과, 과목번호) 과목(과목코드, 과목명, 학점)
   - 교수(교수번호, 이름, 학과) 과목(과목코드, 과목명, 학점, 교수번호)
 
-  ![database16](/assets/images/2023-10-14/database16.png)
+  ![database16](/assets/images/2023-10-14-2/database16.png)
 
 - 1:N 관계
   - 각 관계를 릴레이션으로 만든 후 1의 기본키를 N에 외래키로 포함시키고 관계 역시 N에 포함시킨다
   - 학과(학과코드, 학과명, 전화번호) 학생(학번, 성명, 학과, 학과코드)
 
-![database17](/assets/images/2023-10-14/database17.png)
+![database17](/assets/images/2023-10-14-2/database17.png)
 
 - N:M 관계
   - 모든 개체와 관계를 독립된 릴레이션으로 만든 후, 관계 릴레이션에는 각 개체의 기본키를 외래키로 포함시킨다.
   - 학생(학번, 성명, 학과) 과목(과목번호, 과목명, 학점) 수강(학번, 과목번호)
-    ![database18](/assets/images/2023-10-14/database18.png)
+    ![database18](/assets/images/2023-10-14-2/database18.png)
 
 ## 키와 무결성 제약 조건
 
@@ -514,7 +514,7 @@ Relationship -> Relation
 - 즉 유일성만 만족하면 super key
 - 학번, 주민번호, {학번, 이름}
 
-![database19](/assets/images/2023-10-14/database19.png)
+![database19](/assets/images/2023-10-14-2/database19.png)
 
 ### Candidate Key(후보키): 기본키가 될 수 있는 키
 
@@ -545,11 +545,11 @@ Relationship -> Relation
 - 테이블 간에 관계를 맺어주는 키
 - 1:n 관계에서는 n쪽에서 1쪽으로
 
-![database20](/assets/images/2023-10-14/database20.png)
+![database20](/assets/images/2023-10-14-2/database20.png)
 
 ### Key 정리
 
-![database21](/assets/images/2023-10-14/database21.png)
+![database21](/assets/images/2023-10-14-2/database21.png)
 
 ### 무결성 제약(Integrity Constraint)
 
@@ -563,7 +563,7 @@ Relationship -> Relation
 
 - 한 릴레이션의 기본키를 구성하는 어떠한 속성 값도 널(NULL)이거나 중복값을 가질 수 없다.
 
-![database22](/assets/images/2023-10-14/database22.png)
+![database22](/assets/images/2023-10-14-2/database22.png)
 
 ### 참조 무결성 제약
 
@@ -571,7 +571,7 @@ Relationship -> Relation
 - 참조되는 테이블의 수정, 삭제는 주의가 필요(학과 테이블의 D001 삭제, D003 수정)
 - 참조하는 테이블 속성의 값이 참조되는 속성값의 Domain에 없는 경우(학생 테이블 102의 학과 코드가 D005로 입력)
 
-![database23](/assets/images/2023-10-14/database23.png)
+![database23](/assets/images/2023-10-14-2/database23.png)
 
 ### 무결성 제약조건을 위한 DBMS 옵션
 
