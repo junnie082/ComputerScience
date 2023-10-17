@@ -295,3 +295,100 @@
 - The bandwidth of periodic and nonperiodic composite signals
 
 ![datacommunication20](/assets/images/2023-10-17-2/datacommunication20.png)
+
+- Example
+  - If a periodic signal is decomposed into five sine waves with frequencies of 100, 300, 500, 700, and 900 Hz, what is its bandwidth? Draw the spectru, assuming all components have a maximum amplitude of 10 V.
+  - Solution
+  - Let f(h) be the highest frequency, f1 is the lowest frequency, and B the bandwidth. Then
+
+> B = f(h) - f(1) = 900 - 100 = 800 Hz
+
+![datacommunication22](/assets/images/2023-10-17-2/datacommunication22.png)
+
+- Example
+  - A periodic signal has a bandwidth of 20 Hz. The highest frequency is 60 Hz. What is the lowest frequency?
+    Draw the spectrum if the signal contains all frequencies
+
+> B = f(h) - f(1) -> 20 = 60 - f(1) -> f(1) = 60 - 20 = 40 Hz
+
+![datacommunication23](/assets/images/2023-10-17-2/datacommunication23.png)
+
+- A nonperiodic composite signal has a bandwidth of 200 kHz, with a middle frequency of 140 kHz and peak amplitude of 20 V. The two extreme frequencies have an amplitude of 0. Draw the frequency domain of the signal.
+- Solution
+  - The lowest frequency must be at 40 kHz and the highest at 240 kHz.
+  - The following figure shows the frequency domain and the bandwidth.
+
+![datacommunication24](/assets/images/2023-10-17-2/datacommunication24.png)
+
+- Example
+
+  - An example of a nonperiodic composite signal is the signal propagated by an `AM radio station`. In the United States, each AM radio station is assigned a 10-kHz bandwidth. The total bandwidth dedicated to AM radio ranges from 530 to 1700 kHz. We will show the rationale behind this 10-kHz bandwidth later.
+
+  - Another example of a nonperiodic composite signal is the signal propagated by an FM radio station. In the United States, each FM radio station is assigned a 200-kHz bandwidth. The total bandwidth dedicated to FM radio ranges from 88 to 108 MHz. We will show the rationale behind this 200-kHz bandwidth later.
+
+### Digital Signals
+
+- In addition to being represented by an analog signal, information can also be represented by a digital signal.
+
+- For example,
+
+  - a 1 can be encoded as a positive voltage and a 0 as zero voltage.
+
+- A digital signal can have more than two levels.
+
+  - In this case, we can send more than 1 bit for each level.
+  - Next slide shows two signals, one with two levels and the other with four.
+
+- Two digital signals: one with two signal levels and the other with four signal levels
+
+![datacommunication25](/assets/images/2023-10-17-2/datacommunication25.png)
+
+- A digital signal has eight levels. How many bits are needed per level? We calculate the number of bits from the following formula. Each signal level is represented by 3 bits.
+
+> Number of bits per level = log2(8) = 3
+
+- A digital signal has nine levels. How many bits are needed per level? We calculate the number of bits by using the formula. Each signal level is represented by 3.17 bits. However, this answer is not realistic. The number of bits sent per level needs to be an integer as well as a power of 2. For this example, 4 bits can represent one level.
+
+### Bit Rate
+
+- Most digital signals are `nonperiodic`, and thus period and frequency are not appropriate characteristics.
+
+- Another term - `bit rate` (instead of frequency) - is used to describe digital signals.
+
+- The bit rate is the number of bits sent in 1s, expressed in `bits per second (bps)`. The following figure shows the bit rate for two signals.
+
+![datacommunication26](/assets/images/2023-10-17-2/datacommunication26.png)
+
+- Example
+  - A digitized voice channel, as we will see later, is made by digitizing a 4-kHz bandwidth analog voice signal. We need to sample the signal at twice the highest frequency (two samples per hertz). We assume that each sample requires 8 bits. What is the required bit rate?
+  - Solution
+    - The bit rate can be calculated as
+
+> 2 x 4000 x 8 = 64,000 bps = 64 kbps
+
+- What is the bit rate for high-definition TV (HDTV)?
+
+- Solution
+  - HDTV uses digital signals to broadcast high quality video signals. The HDTV screen is normally a ratio of 16:9 (in contrast to 4:3 for regular TV), which means the screen is wider. There are 1920 by 1080 pixels per screen, and the screen is renewed 30 times per second. Twenty-four bits represents one color pixel.
+    We can calculate the bit rate as
+
+> 1920 x 1080 x 30 x 24 = 1,492,992,000 = 1.5 Gbps
+
+- The TV stations reduce this rate to 20 to 40 Mbps through compression.
+
+### Digital As Composite Analog
+
+- Based on Fourier analysis, a digital signal is a composite analog signal.
+
+- The bandwidth is infinite, as you may have guessed. We can intuitively come up with this concept when we consider a digital signal.
+
+- A digital signal, in the time domain, comprises connected vertical and horizontal line segments.
+
+  - A vertical line in the time domain means a frequency of infinity
+  - A horizontal line in the time domain means a frequency of zero.
+
+- Going from a frequency of zero to a frequency of infinity implies all frequencies in between are part of the domain.
+
+- The time and frequency domains of periodic and nonperiodic digital signals
+
+![datacommunication27](/assets/images/2023-10-17-2/datacommunication27.png)
