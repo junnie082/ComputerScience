@@ -1,10 +1,10 @@
 # Data Communication 02
 
-#### 2023.10.17.(화)
-
 ## Network Structures
 
 #### : Network criteria, network structures, Internet
+
+#### 2023.10.17.(화)
 
 ### Networks
 
