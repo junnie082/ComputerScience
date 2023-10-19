@@ -480,3 +480,126 @@
 - Spread spectrum
 
 ![datacommunication34](/assets/images/2023-10-19/datacommunication34.png)
+
+### FHSS
+
+- `Frequency hopping spread spectrum (FHSS)` technique uses M different carrier frequencies that are modulated by the source signal
+
+  - At one moment, the signal modulates one carrier frequency;
+  - At the next moment, the signal modulates another carrier frequency
+
+- Frequency hopping spread spectrum (FHSS)
+
+![datacommunication35](/assets/images/2023-10-19/datacommunication35.png)
+
+- A pseudorandom code generator, called pseudorandom noise (PN), creates a k-bit pattern for every hopping period T(h).
+
+- The frequency synthesizer creates a carrier signal of that frequency, and the source signal modulates the carrier signal.
+
+- `Privacy & antijamming` effect
+
+- Frequency selection in FHSS
+
+![datacommunication36](/assets/images/2023-10-19/datacommunication36.png)
+
+- FHSS cycles
+
+![datacommunication37](/assets/images/2023-10-19/datacommunication37.png)
+
+### FHSS vs. FDM
+
+- Bandwidth Sharing
+
+* If the number of hopping frequencies is M, we can multiplex M channels into one by using the same B(ss) bandwidth
+* FHSS is similar to FDM
+
+- Bandwidth sharing
+
+![datacommunication38](/assets/images/2023-10-19/datacommunication38.png)
+
+### DSSS (~CDM)
+
+- `Direct sequence spread spectrum (DSSS)` technique
+  - Also expand the bandwidth of the original signal
+  - Replace each data bit with n bits using a spreading code
+  - In other words, each bit is assigned a code of n bits, called chips, where the chip rate is n times that of the data bit
+  - Used in an early wireless LAN
+
+![datacommunication39](/assets/images/2023-10-19/datacommunication39.png)
+
+- DSSS example
+  - Spreading code is 11 chips having the pattern 10110111000
+
+![datacommunication40](/assets/images/2023-10-19/datacommunication40.png)
+
+- The spread signal can provide privacy if the intruder does not know the code.
+
+- It can also provide immunity against interference if each station uses a different code
+
+### FDMA
+
+- In `FDMA` (frequency division multiple access), the available bandwidth of the common channel is divided into bands that are separated by guard bands
+
+![datacommunication41](/assets/images/2023-10-19/datacommunication41.png)
+
+### TDMA
+
+- In TDMA, the bandwidth is just one channel that is timeshared between different stations
+
+![datacommunication42](/assets/images/2023-10-19/datacommunication42.png)
+
+### OFDM for LTE and 5G NR
+
+![datacommunication43](/assets/images/2023-10-19/datacommunication43.png)
+
+### CDMA
+
+- In `CDMA`, one channel carries all transmissions simultaneously
+
+  - Orthogonal sequences
+
+- Simple idea of communication with code
+
+![datacommunication44](/assets/images/2023-10-19/datacommunication44.png)
+
+- Chips
+  - CDMA is based on coding theory.
+  - Each station is assigned a code, which is a sequence of numbers called `chips`
+  - Not choosing the sequences randomly; they were carefully selected.
+    - They are called `orthogonal sequences`
+  - Chips sequences
+
+![datacommunication45](/assets/images/2023-10-19/datacommunication45.png)
+
+- General rules and examples of creating `Walsh tables`
+  - The number of sequences in a Walsh table needs to be N = 2^m.
+
+![datacommunication42](/assets/images/2023-10-19/datacommunication42.png)
+
+- Example
+
+* Find the chips for a network with
+  a. Two stations
+  b. Four stations
+
+* Solution
+  : We can use the rows of W2 and W4 in Figure
+  a. For a two-station network, we have [+1 +1] and [+1 -1].
+  b. For a four-station network we have [+1 +1 +1 +1], [+1 -1 +1 -1], [+1 +1 -1 -1], and [+1 -1 -1 +1].
+
+- Example
+  - What is the number of sequences if we have 90 stations in our network?
+    - Solution
+      : The number of sequences needs to be 2^m. We need to choose m = 7 and N = 2^7 or 128. We can then use 90 of the sequences as the chips.
+
+### SDM: Multiuser MIMO (MIMO + Scheduling)
+
+![datacommunication47](/assets/images/2023-10-19/datacommunication47.png)
+
+- LTE-Advanced: downlink 8x8
+
+  - Typically, 4x2
+
+- 5G NR: 32 or 64 antennas at base station
+
+![datacommunication48](/assets/images/2023-10-19/datacommunication48.png)
