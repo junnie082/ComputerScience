@@ -386,3 +386,97 @@
 - Prisms in wave-length division multiplexing
 
 ![datacommunication29](/assets/images/2023-10-19/datacommunication29.png)
+
+### Time-Division Multiplexing
+
+- `Time-division multiplexing (TDM)` is a digital process that allows several connections to share the high bandwidth of a link.
+
+- Instead of sharing a portion of the bandwidth as in FDM, time is shared. Each connection occupies a portion of time in the link.
+
+- Figure in next page gives a conceptual view of TDM. Note that the same link is used as in FDM;
+
+  - here, however, the link is shown sectioned by time rather than by frequency.
+
+- In the figure, portions of signals 1, 2, 3, and 4 occupy the link sequentially.
+
+- TDM
+  - Note that in Figure, we are concerned with only multiplexing, not switching.
+  - This means that all the data in a message from source 1 always go to one specific destination, be it 1, 2, 3, or 4. The delivery is fixed and unvarying, unlike switching.
+
+![datacommunication30](/assets/images/2023-10-19/datacommunication30.png)
+
+- Difficult because of propagation delays introduced in the system if the stations are spread over a large area
+
+  - `Guard times`
+
+- `Synchronization` is normally accomplished by having some synchronization bits (normally referred to as preamble bits) at the beginning of each slot
+
+- TDM is a digital multiplexing technique for combining several low-rate channels into one high-rate one.
+
+- We can divide TDM into two different schemes
+
+  - Synchronous TDM
+  - Statistical TDM
+
+- `Synchronous` TDM
+
+* Each input correction has an allotment in the output even if it is not sending data.
+* Each input occupies one input time slot.
+* The duration of an output time slot is n times shorter than the duration of an input time slot.
+* If an input time slot is T sec, the output time slot is T/n sec, where n is the number of connections.
+* In synchronous TDM, the data rate of the link is n times faster, and the unit duration is n times shorter.
+* Time slots are grouped into frames.
+* A frame consists of one complete cycle of time slots, with one slot dedicated to each sending device
+
+- Synchronous time-division multiplexing
+
+![datacommunication31](/assets/images/2023-10-19/datacommunication31.png)
+
+- Empty Slots
+  - Synchronous TDM is not as efficient as it could be
+
+![datacommunication32](/assets/images/2023-10-19/datacommunication32.png)
+
+- `Statistical` Time-Division Multiplexing
+  - In synchronous TDM, each input has a reserved slot in the output frame
+    - Inefficient if some input lines have no data to send
+    - Slots are dynamically allocated to improve bandwidth efficiency
+    - In statistical multiplexing, the number of slots in each frame is less than the number of input lines.
+    - The multiplexer checks each input line in round-robin fashion;
+    - It allocates a slot for an input line if the line has data to send;
+    - Otherwise, it skips the line and checks the next line
+
+![datacommunication33](/assets/images/2023-10-19/datacommunication33.png)
+
+- Statistical Time-Division Multiplexing (cont.)
+
+  - `Addressing`
+  - If the multiplexer and the demultiplexer are synchronized, this is guaranteed.
+  - In statistical multiplexing, there is no fixed relationship between the inputs and outputs because there are no preassigned or reserved slots.
+  - The address of the receiver inside each slot to show where it is to be delivered.
+
+  - Slot size
+  - A block of data is usually many bytes while the address is just a few bytes.
+
+  - Bandwidth
+    - The capacity of the link is normally less than the sum of the capacities of each channel.
+
+### Spread Spectrum (~CDM)
+
+- `Multiplexing` combines signals from several sources to achieve bandwidth efficiency
+
+- `Spread spectrum (SS)`
+
+  - Used in wireless applications (LANs and WANs)
+  - Share the medium without interception by an eavesdropper and without being subject to jamming from a malicious intruder
+  - Add redundancy; they spread the original spectrum needed for each station
+  - The expanded bandwidth allows the source to wrap its message in a protective envelope for a more secure transmission.
+
+- Idea of spread spectrum
+
+  - The bandwidth allocated to each station needs to be, by far, larger than what is needed
+  - Spreading process occurs after the signal is created by the source.
+
+- Spread spectrum
+
+![datacommunication34](/assets/images/2023-10-19/datacommunication34.png)
