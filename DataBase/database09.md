@@ -4,4 +4,4 @@
 
 #### 2023.11.11.(토)
 
-![database1](/assets/images/2023-11-11/dabase1.png)
+![database1](/junnie082/desktop-HyojeongJun/CS/assets/images/2023-11-11/dabase1.png)
