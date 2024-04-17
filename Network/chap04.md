@@ -181,3 +181,42 @@ Dijkstras Algorithm()
 - Distance-vector의 Bellman-ford 알고리즘과 비슷하지만, 최소비용이 아닌 정책을 반영
 - 라우팅 테이블 내용은 경로벡터 [x,a,b,..c,d,y]
   - 이웃노드와 교환
+
+![15](/assets/images/2024-04-18/15.png)
+
+![16](/assets/images/2024-04-18/16.png)
+
+![17](/assets/images/2024-04-18/17.png)
+
+### 노드의 경로-벡터 알고리즘
+
+```C
+Path_Vector_Routing()
+{
+    // Initialization
+    for (y=1 to N)
+    {
+        if (y is myself)
+            Path[y] = myself
+        else if (y is a neighbor)
+            Path[y] = myself + neighbor node
+        else
+            Path[y] = empty
+    }
+    Send vector {Path[1], Path[2], ..., Path[y]} to all neighbors
+    // Update
+    repeat (forever)
+    {
+        wait (for a vector Pathw from a neighbor w)
+        for (y=1 to N)
+        {
+            if (Pathw includes myself)
+                discard the path // Avoid any loop
+            else
+                Path[y] = best { Path[y], (myself + Pathw[y])}
+        }
+        If (there is a change in the vector)
+            Send vector {Path[1], Path[2], ..., Path[y]} to all neighbors
+    }
+}
+```
