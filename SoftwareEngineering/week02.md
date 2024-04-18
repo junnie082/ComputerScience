@@ -1,6 +1,6 @@
 # Software Engineering
 
-# Week 01
+# Week 02
 
 #### 2024.04.19.(금)
 
