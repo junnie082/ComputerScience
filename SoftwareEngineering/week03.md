@@ -126,3 +126,63 @@
 
 * Requirements compromises are inevitable so system may not meet real needs of users.
 * Loss of control over evolution of reused system elements.
+
+## Process activities
+
+### Process activities
+
+- Real software processes are inter-leaved sequences of technical, collaborative and managerial activities,
+
+  - with the overall goal of specifying, designing, implementing and testing a software system.
+
+- The four basic process activities of specification, design and implementation, validation and evolution are organized differently in different development processes.
+
+- For example, in the waterfall model, they are organized in sequence, whereas in incremental development they are interleaved.
+
+### Software specification
+
+- The process of establishing what services are required and the constraints on the system's operation and development.
+
+- Requirements engineering process
+  - `Requirements elicitation and analysis` - system description.
+    - What do the system stakeholders require or expect from the system?
+  - `Requirements specification` - user and system requirements.
+    - Defining the requirements in detail.
+  - `Requirements validation` - requirements document.
+  - Checking the validity of the requirements.
+
+### Software design and implementation
+
+- The process of converting the system specification into an executable system.
+
+- Software design
+
+* Design a software structure that realises the specification;
+
+- Implementation
+
+* Translate this structure into an executable program;
+
+- The activities of design and implementation are closely related and may be inter-leaved.
+
+![6](/assets/images/2024-04-19/6.png)
+
+### Design activities
+
+- `Architectural desgin`, where you identify the overall structure of the system, the principal components (subsystems or modules), their relationships and how they are distributed.
+
+- `Database design`, where you design the system data structures and how these are to be represented in a database.
+
+- `Interface design`, where you define the interfaces between system components.
+
+- `Component selection and design`, where you search for reusable components. If unavailable, you design how it will operate.
+
+### System implementation
+
+- The software is implemented either by developing a program/programs, or by configuring an application system.
+
+- `Design and implementation are interleaved activities` for most types of software system.
+
+- Programming is an individual activity with no standard process.
+
+- Debugging is the activity of finding program faults and correcting these faults.
